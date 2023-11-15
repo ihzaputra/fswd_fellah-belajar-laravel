@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function hello()
     {
         return view('hello-world');
     }
@@ -14,5 +14,10 @@ class HomeController extends Controller
     public function biodata()
     {
         return view('biodata');
+    }
+
+    public function index()
+    {
+        return view('pages.dashboard');
     }
 }

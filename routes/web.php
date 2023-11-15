@@ -18,5 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/helloworld', [HomeController::class, 'index']);
+Route::get('/helloworld', [HomeController::class, 'hello']);
 Route::get('/biodata', [HomeController::class, 'biodata']);
+
+Route::get('/main', [HomeController::class, 'index']);
