@@ -28,7 +28,7 @@ Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard.inde
 
 Route::get('/category', [CategoryController::class, 'index']);
 
-Route::get('/product', [App\Http\Controllers\ProductController::class, 'index']);
+// Route::get('/product', [App\Http\Controllers\ProductController::class, 'index']);
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
